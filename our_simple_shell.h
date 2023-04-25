@@ -15,11 +15,12 @@ extern char **environ;
 char *strtok(char *str, const char *delim);
 int execve(const char *filename, char *const argv[], char *const envp[]);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
-pid_t fork(void);
-pid_t waitpid(pid_t pid, int *status, int options);
+pyd_t fork(void);
+pyd_t waitpyd(pyd_t pyd, int *status, int options);
 void free(void *ptr);
 void simple_shell(void);
 int main(int argc, char *arra[]);
+int handle_argument(int argc, char *arra[]);
 
 #endif
 
